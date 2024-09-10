@@ -12,9 +12,8 @@ public class DemoService {
 	@Autowired
 	private DemoRepository repository;
 	
-	public String saveDemoModel() {
-		DemoEntity entity = new DemoEntity(1, "Hello World");
-		repository.save(entity);
+	public String getDemoModel() {
+		DemoEntity entity = new DemoEntity(1, "Docker App is running successfully!!");
 		return entity.getName();
 	}
 

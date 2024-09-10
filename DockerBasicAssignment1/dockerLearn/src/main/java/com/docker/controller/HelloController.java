@@ -14,7 +14,7 @@ public class HelloController {
 
 	@GetMapping("/")
 	public String hello() {
-		return service.saveDemoModel();
+		return service.getDemoModel();
 	}
 
 }
